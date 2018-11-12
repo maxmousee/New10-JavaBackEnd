@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="726f58d5-c27b-449f-9b1d-fdf70a5cd501" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nfsindustries/response/BalanceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nfsindustries/response/BalanceResponseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nfsindustries/application/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nfsindustries/application/AccountBalanceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/GreetingControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/AccountBalanceControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nfsindustries/application/AccountBalanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nfsindustries/application/AccountBalanceController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,13 +64,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="13" />
+          <entry key="java" value="238" />
           <entry key="xml" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="238" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="32" />
         </counts>
@@ -78,13 +78,13 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="14" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="java" value="14" />
           <entry key="xsd" value="2" />
         </counts>
       </usages-collector>
@@ -107,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/application/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,20 +116,61 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/application/AccountBalanceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="225">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#824#825#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hello/AccountBalanceControllerTests.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/application/Greeting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/response/BalanceResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#632#633#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/nfsindustries/response/BalanceResponseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/nfsindustries/application/AccountBalanceControllerTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -148,6 +189,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -164,6 +206,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/nfsindustries/application/Greeting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nfsindustries/application/GreetingController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/nfsindustries/application/AccountBalanceControllerTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nfsindustries/response/BalanceResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/nfsindustries/response/BalanceResponseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nfsindustries/application/AccountBalanceController.java" />
       </list>
     </option>
@@ -318,7 +363,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="nfsindustries" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javabackend" type="b2602c69:ProjectViewProjectNode" />
@@ -332,6 +377,36 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="xsd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javabackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New10-JavaBackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javabackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New10-JavaBackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javabackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New10-JavaBackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nfsindustries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javabackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New10-JavaBackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nfsindustries" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -347,7 +422,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542056476215" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542057858401" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -355,6 +432,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.nfsindustries.response" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -368,7 +453,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountBalanceControllerTests (1)">
+  <component name="RunManager" selected="Spring Boot.Application (1)">
     <configuration name="AccountBalanceControllerTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabackend" />
       <extension name="coverage">
@@ -397,15 +482,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="BalanceResponseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabackend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="new10assignment.*" />
+          <option name="PATTERN" value="com.nfsindustries.response.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="new10assignment.App" />
+      <option name="PACKAGE_NAME" value="com.nfsindustries.response" />
+      <option name="MAIN_CLASS_NAME" value="com.nfsindustries.response.BalanceResponseTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BalanceResponseTest.getStartBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nfsindustries.response.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nfsindustries.response" />
+      <option name="MAIN_CLASS_NAME" value="com.nfsindustries.response.BalanceResponseTest" />
+      <option name="METHOD_NAME" value="getStartBalance" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -440,17 +542,19 @@
     <list>
       <item itemvalue="Spring Boot.App" />
       <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="Spring Boot.App (1)" />
       <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="JUnit.AccountBalanceControllerTests" />
       <item itemvalue="JUnit.AccountBalanceControllerTests (1)" />
+      <item itemvalue="JUnit.BalanceResponseTest" />
+      <item itemvalue="JUnit.BalanceResponseTest.getStartBalance" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="JUnit.BalanceResponseTest" />
+        <item itemvalue="JUnit.BalanceResponseTest.getStartBalance" />
         <item itemvalue="JUnit.AccountBalanceControllerTests (1)" />
         <item itemvalue="JUnit.AccountBalanceControllerTests" />
-        <item itemvalue="Spring Boot.Application (1)" />
-        <item itemvalue="Spring Boot.App (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -467,16 +571,35 @@
       <workItem from="1542028317111" duration="883000" />
       <workItem from="1542049156659" duration="737000" />
       <workItem from="1542049981633" duration="2594000" />
-      <workItem from="1542054358913" duration="1134000" />
+      <workItem from="1542054358913" duration="2639000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AccountBalanceControllerTests - 2018.11.12 at 21h 58m 54s.xml">
+      <configuration name="AccountBalanceControllerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountBalanceControllerTests_(1) - 2018.11.12 at 22h 01m 19s.xml">
+      <configuration name="AccountBalanceControllerTests (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BalanceResponseTest - 2018.11.12 at 22h 19m 17s.xml">
+      <configuration name="BalanceResponseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BalanceResponseTest_getStartBalance - 2018.11.12 at 22h 19m 35s.xml">
+      <configuration name="BalanceResponseTest.getStartBalance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BalanceResponseTest_getStartBalance - 2018.11.12 at 22h 20m 01s.xml">
+      <configuration name="BalanceResponseTest.getStartBalance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BalanceResponseTest - 2018.11.12 at 22h 21m 39s.xml">
+      <configuration name="BalanceResponseTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5348000" />
+    <option name="totallyTimeSpent" value="6853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32689556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -488,7 +611,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39617833" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36305732" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -568,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/application/Greeting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/model/CashBalance3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -582,27 +698,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hello/AccountBalanceControllerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/nfsindustries/application/AccountBalanceControllerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/nfsindustries/response/BalanceResponseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/response/BalanceResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/application/AccountBalanceController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/application/Greeting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hello/AccountBalanceControllerTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/business.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nfsindustries/application/AccountBalanceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
