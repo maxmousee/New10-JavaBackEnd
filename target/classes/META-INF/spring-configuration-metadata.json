@@ -1,0 +1,19 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.nfsindustries.application.StorageProperties",
+      "name": "storage",
+      "type": "com.nfsindustries.application.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.nfsindustries.application.StorageProperties",
+      "defaultValue": "upload-dir",
+      "name": "storage.location",
+      "description": "Folder location for storing files",
+      "type": "java.lang.String"
+    }
+  ]
+}

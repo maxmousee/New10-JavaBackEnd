@@ -1,0 +1,4 @@
+com/nfsindustries/response/BalanceResponseTest.class
+com/nfsindustries/application/FileUploadTests.class
+com/nfsindustries/business/BalanceCalculatorTest.class
+com/nfsindustries/application/FileUploadIntegrationTests.class

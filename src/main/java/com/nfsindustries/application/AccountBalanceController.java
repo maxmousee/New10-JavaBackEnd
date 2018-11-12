@@ -1,26 +1,40 @@
 package com.nfsindustries.application;
 
-import com.nfsindustries.response.BalanceResponse;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-@RestController
+@Controller
 public class AccountBalanceController {
 
-    private static final String template = "Hello, %s!";
+    private final StorageService storageService;
+
     private final AtomicLong counter = new AtomicLong();
 
-    @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Greeting(counter.incrementAndGet(),
-                            String.format(template, name));
+    @Autowired
+    public AccountBalanceController(StorageService storageService) {
+        this.storageService = storageService;
     }
 
-    @RequestMapping("/getbalance")
-    public BalanceResponse getBalance() {
-        return new BalanceResponse(0, 0, 0, 0);
+    @PostMapping("/getbalance/")
+    public String getBalance(@RequestParam("file") MultipartFile file,
+                                      RedirectAttributes redirectAttributes) {
+        storageService.store(file);
+        redirectAttributes.addFlashAttribute("message",
+                "You successfully uploaded " + file.getOriginalFilename() + "!");
+
+        return "redirect:/";
+    }
+
+    @ExceptionHandler(StorageFileNotFoundException.class)
+    public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
+        return ResponseEntity.notFound().build();
     }
 }
