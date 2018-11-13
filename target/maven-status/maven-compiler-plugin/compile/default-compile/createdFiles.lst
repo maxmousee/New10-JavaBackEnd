@@ -93,7 +93,6 @@ com/nfsindustries/model/EntryStatus2Code.class
 com/nfsindustries/model/FinancialInstitutionIdentification7.class
 com/nfsindustries/model/TaxRecord1.class
 com/nfsindustries/model/DocumentType5Code.class
-com/nfsindustries/application/Greeting.class
 com/nfsindustries/model/CashAccountType2.class
 com/nfsindustries/model/CreditorReferenceType1Choice.class
 com/nfsindustries/model/package-info.class
