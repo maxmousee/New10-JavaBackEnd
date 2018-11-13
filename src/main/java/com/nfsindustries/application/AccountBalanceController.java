@@ -40,21 +40,18 @@ public class AccountBalanceController {
     }
 
     @RequestMapping("/getbalance/")
-    public BalanceResponse getBalance(@RequestParam("file") MultipartFile file) {
+    public BalanceResponse getBalance(@RequestParam("file") MultipartFile file) throws Exception {
         storageService.store(file);
-        try {
-            InputStream inputStream = file.getInputStream();
-            Document document = camt053Parser.parse(inputStream);
-        } catch (Exception ex) {
-            LOGGER.error(ex.toString());
-        }
+        InputStream inputStream = file.getInputStream();
+        Document document = camt053Parser.parse(inputStream);
         BalanceResponse balanceResponse = new BalanceResponse(0, 0, 0, 0);
         return balanceResponse;
     }
 
-    @ExceptionHandler(StorageFileNotFoundException.class)
+    @ExceptionHandler()
     public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
+        LOGGER.error(exc.toString());
         return ResponseEntity.badRequest().build();
     }
-    
+
 }
