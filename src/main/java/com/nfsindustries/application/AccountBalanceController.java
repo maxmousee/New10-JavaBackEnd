@@ -42,8 +42,8 @@ public class AccountBalanceController {
         this.storageService = storageService;
     }
 
-    @RequestMapping("/getbalance/")
-    public BalanceResponse getBalance(@RequestParam("file") MultipartFile file) throws Exception {
+    @RequestMapping("/calculatebalance")
+    public BalanceResponse calculateBalance(@RequestParam("file") MultipartFile file) throws Exception {
         storageService.store(file);
         InputStream inputStream = file.getInputStream();
         Document document = camt053Parser.parse(inputStream);

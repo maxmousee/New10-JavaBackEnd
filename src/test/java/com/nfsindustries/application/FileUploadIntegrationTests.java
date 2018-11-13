@@ -37,7 +37,7 @@ public class FileUploadIntegrationTests {
         ClassPathResource resource = new ClassPathResource("testupload.xml", getClass());
         MultiValueMap<String, Object> map = new LinkedMultiValueMap<>();
         map.add("file", resource);
-        ResponseEntity<String> response = this.restTemplate.postForEntity("/getbalance/", map,
+        ResponseEntity<String> response = this.restTemplate.postForEntity("/calculatebalance/", map,
                 String.class);
 
         assertThat(response.getStatusCode()).isEqualByComparingTo(HttpStatus.OK);

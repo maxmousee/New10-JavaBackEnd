@@ -1,0 +1,49 @@
+**Acount Balance Summary**
+----
+  <_Receives a XML CAMT 053.001.02 compatible file and returns a JSON with balance information._>
+  
+  Written using Java 8, Maven and Spring Boot.
+  
+  How to run:
+  'mvn spring-boot:run'
+  
+  How to run tests:
+    'mvn test'
+  
+  How to test:
+  'curl -F 'file=@camt.053.001.02.xml' http://localhost:8080/calculatebalance'
+
+* **URL**
+
+  <_/calculatebalance_>
+
+* **Method:**
+  
+  <_Calculate Balance from a XML file_>
+
+  `POST`
+
+* **Data Params**
+
+  **Required:**
+   
+     `file=[file]`
+
+* **Success Response:**
+  
+  <_What should the status code be on success and is there any returned data? This is useful when people need to to know what their callbacks should expect!_>
+
+  * **Code:** 200 <br />
+    **Content:** `{"startBalance":500000.0,"endBalance":435678.5,"netBalance":935678.5,"daysInDebt":1 }`
+ 
+* **Error Response:**
+
+  <_If the file is invalid, exceeds the file size limit._>
+
+  * **Code:** 400 Bad Request <br />
+    **Content:** ``
+
+
+* **Notes:**
+
+  <_Things to improve: more unit tests, more integration tests, docker support, serverless support, better separation in modules and error handling._> 

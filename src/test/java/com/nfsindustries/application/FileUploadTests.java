@@ -38,7 +38,7 @@ public class FileUploadTests {
         String fileString = IOUtils.toString(resource.getInputStream(), "UTF-8");
         MockMultipartFile multipartFile = new MockMultipartFile("file", "testupload.xml",
                 "text/plain", fileString.getBytes());
-        this.mvc.perform(fileUpload("/getbalance/").file(multipartFile))
+        this.mvc.perform(fileUpload("/calculatebalance/").file(multipartFile))
                 .andExpect(status().isOk());
         then(this.storageService).should().store(multipartFile);
     }
