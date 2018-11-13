@@ -1,11 +1,10 @@
 package com.nfsindustries.application;
 
+import com.nfsindustries.response.BalanceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -17,7 +16,7 @@ import javax.xml.validation.Validator;
 import java.io.InputStream;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Controller
+@RestController
 public class AccountBalanceController {
 
     private final StorageService storageService;
@@ -29,19 +28,16 @@ public class AccountBalanceController {
         this.storageService = storageService;
     }
 
-    @PostMapping("/getbalance/")
-    public String getBalance(@RequestParam("file") MultipartFile file,
-                                      RedirectAttributes redirectAttributes) {
+    @RequestMapping("/getbalance/")
+    public BalanceResponse getBalance(@RequestParam("file") MultipartFile file) {
         storageService.store(file);
-        redirectAttributes.addFlashAttribute("message",
-                "You successfully uploaded " + file.getOriginalFilename() + "!");
-
-        return "redirect:/";
+        BalanceResponse balanceResponse = new BalanceResponse(0, 0, 0, 0);
+        return balanceResponse;
     }
 
     @ExceptionHandler(StorageFileNotFoundException.class)
     public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
-        return ResponseEntity.notFound().build();
+        return ResponseEntity.badRequest().build();
     }
 
     private static boolean validateAgainstXSD(InputStream xml, InputStream xsd)

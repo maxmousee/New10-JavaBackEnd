@@ -41,9 +41,7 @@ public class FileUploadIntegrationTests {
         ResponseEntity<String> response = this.restTemplate.postForEntity("/getbalance/", map,
                 String.class);
 
-        assertThat(response.getStatusCode()).isEqualByComparingTo(HttpStatus.FOUND);
-        assertThat(response.getHeaders().getLocation().toString())
-                .startsWith("http://localhost:" + this.port + "/");
+        assertThat(response.getStatusCode()).isEqualByComparingTo(HttpStatus.OK);
         then(storageService).should().store(any(MultipartFile.class));
     }
 
