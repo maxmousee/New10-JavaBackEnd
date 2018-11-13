@@ -1,6 +1,8 @@
 package com.nfsindustries.application;
 
+import com.nfsindustries.model.Document;
 import com.nfsindustries.response.BalanceResponse;
+import com.nfsindustries.utils.Camt053Parser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +32,8 @@ public class AccountBalanceController {
 
     private final AtomicLong counter = new AtomicLong();
 
+    Camt053Parser camt053Parser = new Camt053Parser();
+
     @Autowired
     public AccountBalanceController(StorageService storageService) {
         this.storageService = storageService;
@@ -37,15 +41,13 @@ public class AccountBalanceController {
 
     @RequestMapping("/getbalance/")
     public BalanceResponse getBalance(@RequestParam("file") MultipartFile file) {
-        boolean isValidFile = false;
         storageService.store(file);
         try {
             InputStream inputStream = file.getInputStream();
-            isValidFile = AccountBalanceController.validateAgainstXSD(inputStream);
+            Document document = camt053Parser.parse(inputStream);
         } catch (Exception ex) {
             LOGGER.error(ex.toString());
         }
-        LOGGER.info("ISVALIDFILE" + isValidFile);
         BalanceResponse balanceResponse = new BalanceResponse(0, 0, 0, 0);
         return balanceResponse;
     }
@@ -54,24 +56,5 @@ public class AccountBalanceController {
     public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
         return ResponseEntity.badRequest().build();
     }
-
-    private static boolean validateAgainstXSD(InputStream xml)
-    {
-        try
-        {
-            Resource resource = new ClassPathResource("camt.053.001.02.xsd");
-            InputStream xsd = resource.getInputStream();
-            SchemaFactory factory =
-                    SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema schema = factory.newSchema(new StreamSource(xsd));
-            Validator validator = schema.newValidator();
-            validator.validate(new StreamSource(xml));
-            return true;
-        }
-        catch(Exception ex)
-        {
-            LOGGER.error(ex.toString());
-            return false;
-        }
-    }
+    
 }
