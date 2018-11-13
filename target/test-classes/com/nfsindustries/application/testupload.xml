@@ -5567,6 +5567,19 @@
 			</Ntry>
 			<Ntry>
 				<NtryRef>1234567890</NtryRef>
+				<Amt Ccy="EUR">500001.00</Amt>
+				<CdtDbtInd>DBIT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-01-02</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-01-02</Dt>
+				</ValDt>
+				<AcctSvcrRef>1234567890</AcctSvcrRef>
+			</Ntry>
+			<Ntry>
+				<NtryRef>1234567890</NtryRef>
 				<Amt Ccy="EUR">855.00</Amt>
 				<CdtDbtInd>CRDT</CdtDbtInd>
 				<Sts>BOOK</Sts>

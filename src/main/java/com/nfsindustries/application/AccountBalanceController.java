@@ -1,5 +1,6 @@
 package com.nfsindustries.application;
 
+import com.nfsindustries.business.BalanceCalculator;
 import com.nfsindustries.model.Document;
 import com.nfsindustries.response.BalanceResponse;
 import com.nfsindustries.utils.Camt053Parser;
@@ -34,6 +35,8 @@ public class AccountBalanceController {
 
     Camt053Parser camt053Parser = new Camt053Parser();
 
+    BalanceCalculator balanceCalculator = new BalanceCalculator();
+
     @Autowired
     public AccountBalanceController(StorageService storageService) {
         this.storageService = storageService;
@@ -44,7 +47,11 @@ public class AccountBalanceController {
         storageService.store(file);
         InputStream inputStream = file.getInputStream();
         Document document = camt053Parser.parse(inputStream);
-        BalanceResponse balanceResponse = new BalanceResponse(0, 0, 0, 0);
+        int daysInDebt = balanceCalculator.getDaysInDebt(document);
+        double netBalance = balanceCalculator.getNetBalance(document);
+        double startBalance = balanceCalculator.getStartBalance(document);
+        double endBalance = balanceCalculator.getEndBalance(document);
+        BalanceResponse balanceResponse = new BalanceResponse(startBalance, endBalance, netBalance, daysInDebt);
         return balanceResponse;
     }
 
