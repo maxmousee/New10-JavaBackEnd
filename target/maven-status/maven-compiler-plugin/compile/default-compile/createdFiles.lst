@@ -30,6 +30,7 @@ com/nfsindustries/model/ProprietaryQuantity1.class
 com/nfsindustries/application/AccountBalanceController.class
 com/nfsindustries/model/CreditorReferenceType2.class
 com/nfsindustries/model/AmountAndCurrencyExchange3.class
+com/nfsindustries/utils/Camt053Parser.class
 com/nfsindustries/application/StorageFileNotFoundException.class
 com/nfsindustries/model/CopyDuplicate1Code.class
 com/nfsindustries/model/FromToAmountRange.class

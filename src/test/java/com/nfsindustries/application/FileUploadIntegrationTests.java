@@ -34,8 +34,7 @@ public class FileUploadIntegrationTests {
 
     @Test
     public void shouldUploadFile() throws Exception {
-        ClassPathResource resource = new ClassPathResource("testupload.txt", getClass());
-
+        ClassPathResource resource = new ClassPathResource("testupload.xml", getClass());
         MultiValueMap<String, Object> map = new LinkedMultiValueMap<>();
         map.add("file", resource);
         ResponseEntity<String> response = this.restTemplate.postForEntity("/getbalance/", map,
