@@ -48,8 +48,8 @@ public class AccountBalanceController {
         return balanceResponse;
     }
 
-    @ExceptionHandler()
-    public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
+    @ExceptionHandler
+    public ResponseEntity<?> handleException(StorageFileNotFoundException exc) {
         LOGGER.error(exc.toString());
         return ResponseEntity.badRequest().build();
     }
